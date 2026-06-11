@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurante I.E.T.F</title> 	<!-- coloca titulos a la página -->
+	
+	<link rel="stylesheet" href="css/style.css"> <!-- llama el archivo style.css que esta carpeta css -->
+
+	
+</head>
+
+<body>
+	
+
+	<div class="contenedor">
+	<header class= "encabezado">
+			<!-- llamar imagenes --> 
+		<marquee>Bienvenidos al Restaurante I.E. 2026</marquee>	<!-- poner marquesina -->
+		<h1>Restaurante I.E.T.F</h1> 	<!-- titulo 1 -->
+
+
+	<div class="slider">
+		<div class="slides">
+		<div class="slide">	
+		<img src="imagenes/banner2.png"> </div>
+		<div class="slide"> 
+		<img src="imagenes/banner1.png"> </div>
+		<div class="slide">
+		<img src="imagenes/banner3.png"></div>
+	</div>
+		
+		<button class="prev">&#10094;</button>
+		<button class="next">&#10095;</button>
+	</div>
+
+	<script>
+		let index = 0;
+		const slides = document.querySelector(".slides");
+		const total = document.querySelectorAll(".slide").length;
+		document.querySelector(".next").onclick = function(){
+		index++;
+		if(index >= total){
+		index = 0;
+		}
+		slides.style.transform = "translateX(-"+index*100+"%)";
+		}
+		document.querySelector(".prev").onclick = function(){
+		index--;
+		if(index < 0){
+		index = total-1;
+		}
+		slides.style.transform = "translateX(-"+index*100+"%)";
+		}
+		</script>	
+		</header>
+
+		<!-- codigo de listas y el menu con hiperviculos a otras paginas con extension html y php, css con #-->
+		<nav class="menu1">   
+			<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="menu.html">Menu Restautrante</a></li>
+			<li><a href="contactos.html">Contactos</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			<a href="https://www.tripadvisor.com/Restaurants-g317035-Boyaca_Boyaca_Department.html" target="_blank">tripadvisor</a>
+			</ul>
+		</nav>
+
+		<main class="contenido">
+			<section id="inicio">
+			<h2>Bienvenidos a El Restaurante I.E.T.F</h2>
+	
+			</section>
+
+		
+<body>
+  <div class="contenido">
+    <h1>Mi Restaurante</h1>
+    <p>Bienvenido 🍽️</p>
+  </div>
+</body>
+</html>
+		
+		
+		
+				<h2>Menú Restaurante</h2>
+
+<table class="tabla-menu">
+  <thead>
+    <tr>
+      <th>Plato</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hamburguesa Especial</td>
+      <td>Carne, queso, lechuga, tomate y salsa de la casa</td>
+      <td class="precio">$18.000</td>
+    </tr>
+    <tr>
+      <td>Pasta Alfredo</td>
+      <td>Pasta cremosa con pollo y queso parmesano</td>
+      <td class="precio">$22.000</td>
+    </tr>
+    <tr>
+      <td>Ensalada César</td>
+      <td>Lechuga, pollo, crutones y aderezo césar</td>
+      <td class="precio">$15.000</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+		<input type="number" id="n1">
+		<input type="number" id="n2">
+		<button onclick="sumar()">Sumar</button>
+
+		<p id="resultado"></p>
+
+		</main>
+
+	<aside class="lateral">
+		
+		<center> <video width="640" height="360" controls>
+	    <source src="imagenes/REST.mp4" type="video/mp4"></video></center>
+	 </aside>
+
+	<footer>
+		<center><p>Restaurante I.E.T.F </p></center>
+
+	
+	</footer>
+		</div>
+		
+			<script>
+		function sumar(){
+		    let a = parseInt(document.getElementById("n1").value);
+		    let b = parseInt(document.getElementById("n2").value);
+		    document.getElementById("resultado").innerHTML = a + b;
+		}
+		</script>
+</body>
+</html>
+
